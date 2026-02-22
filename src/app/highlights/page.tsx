@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { GALLERY_IMAGES } from "@/lib/gallery-images";
+import { basePath } from "@/lib/constants";
 import FadeInSection from "@/components/FadeInSection";
 
 export default function HighlightsPage() {
@@ -32,7 +33,7 @@ export default function HighlightsPage() {
             >
               <div className="relative overflow-hidden rounded-xl">
                 <Image
-                  src={`/gallery/${img}`}
+                  src={`${basePath}/gallery/${img}`}
                   alt={`Event highlight ${index + 1}`}
                   width={400}
                   height={300}

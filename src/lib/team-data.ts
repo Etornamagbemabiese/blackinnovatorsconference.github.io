@@ -1,3 +1,5 @@
+import { basePath } from "./constants";
+
 export interface TeamMember {
   name: string;
   image: string;
@@ -8,7 +10,7 @@ export interface TeamMember {
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Austin Dumas",
-    image: "/headshots/austin-dumas.jpeg",
+    image: `${basePath}/headshots/austin-dumas.jpeg`,
     title: "Intern @ EY | President, UNC MBSA | Kenan-Flagler",
     bio: [
       "Junior studying business, economics & French",
@@ -19,7 +21,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Raven Heyward",
-    image: "/headshots/raven-heyward.jpeg",
+    image: `${basePath}/headshots/raven-heyward.jpeg`,
     title: "Incoming Analyst @ Visa | Luther Hodges Scholar",
     bio: [
       "Senior @ UNC Kenan-Flagler",
@@ -30,7 +32,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Alaina Parker",
-    image: "/headshots/alaina-parker.jpeg",
+    image: `${basePath}/headshots/alaina-parker.jpeg`,
     title: "Biomedical Engineering @ UNC | Chancellor's Science Scholar",
     bio: [
       "4th year BME, Pharmaco-Engineering concentration",
@@ -41,7 +43,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Etornam Agbemabiese",
-    image: "/headshots/etornam-agbemabiese.jpeg",
+    image: `${basePath}/headshots/etornam-agbemabiese.jpeg`,
     title: "Business & Computer Science @ UNC | MLT Scholar",
     bio: [
       "Incoming Redwoods Summer Analyst @ DaVita",
@@ -52,7 +54,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Nicole Pyles",
-    image: "/headshots/nicole-pyles.jpeg",
+    image: `${basePath}/headshots/nicole-pyles.jpeg`,
     title: "Co-President, MBSA | MLT Career Prep Fellow",
     bio: [
       "1st degree black belt in Taekwondo",

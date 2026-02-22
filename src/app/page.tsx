@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import FadeInSection from "@/components/FadeInSection";
+import { basePath } from "@/lib/constants";
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
         {/* Full-width group photo with What to Expect overlay on left */}
         <div className="relative h-[50vh] min-h-[400px] w-full lg:h-[55vh]">
           <Image
-            src="/hero-group.jpg"
+            src={`${basePath}/hero-group.jpg`}
             alt="Black Innovators Conference - Community of Black professionals and students at UNC"
             fill
             className="object-cover object-center"
