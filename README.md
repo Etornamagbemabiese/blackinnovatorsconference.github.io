@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Black Innovators Conference at UNC
+
+A high-end, minimalist website for the Black Innovators Conference at UNC, built with Next.js, Tailwind CSS, and Framer Motion.
+
+## Tech Stack
+
+- **Next.js 16** (App Router)
+- **Tailwind CSS v4**
+- **Framer Motion** – smooth scroll animations
+- **Lucide React** – icons
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Route | Description |
+|-------|-------------|
+| `/` | Home – hero, quote, RSVP CTA |
+| `/registration` | RSVP form (First Name, Last Name, Email, School/Company) |
+| `/about` | About the conference |
+| `/team` | Our People – team member cards |
+| `/highlights` | Past event gallery (137 images) |
+| `/experience` | What to Expect – networking, panels, career growth |
+| `/speakers` | 2026 Featured Speakers & Past Guests |
+| `/support` | Sponsors & Donate/Support CTA |
+| `/faq` | Accordion FAQ |
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- **Team members:** Edit `src/lib/team-data.ts`
+- **Speakers:** Edit `src/lib/speakers-data.ts`
+- **Gallery images:** Add/remove files in `public/gallery/` and update `src/lib/gallery-images.ts`
+- **Registration:** Connect the form in `src/app/registration/page.tsx` to your backend or email service
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Background:** `#F0F4F8` (light blue/grey)
+- **Headings:** Cormorant Garamond (serif)
+- **Body:** Inter (sans-serif)
+- **Style:** Minimalist, high whitespace, professional
