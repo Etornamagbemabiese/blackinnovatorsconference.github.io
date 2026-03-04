@@ -17,7 +17,7 @@ export default function TeamFlipCard({ name, image, bio, title }: TeamFlipCardPr
 
   return (
     <div
-      className="h-[320px] w-full cursor-pointer [perspective:1000px] sm:h-[380px]"
+      className="h-[340px] w-full cursor-pointer [perspective:1000px] sm:h-[400px]"
       onClick={() => setIsFlipped(!isFlipped)}
       role="button"
       tabIndex={0}
@@ -30,9 +30,9 @@ export default function TeamFlipCard({ name, image, bio, title }: TeamFlipCardPr
         animate={{ rotateY: isFlipped ? 180 : 0 }}
         transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
-        {/* Front - Photo */}
+        {/* Front */}
         <div
-          className="absolute inset-0 overflow-hidden rounded-2xl bg-[var(--card-bg)] shadow-sm"
+          className="absolute inset-0 overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-sm"
           style={{ backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden" }}
         >
           <div className="relative h-full w-full">
@@ -43,19 +43,22 @@ export default function TeamFlipCard({ name, image, bio, title }: TeamFlipCardPr
               className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-[var(--dark)] via-transparent to-transparent" />
           </div>
-          <div className="absolute bottom-0 left-0 right-0 bg-[#f5f5f5]/95 px-4 py-3 backdrop-blur-sm">
-            <p className="font-serif text-lg font-semibold text-[var(--foreground)]">{name}</p>
+          <div className="absolute bottom-0 left-0 right-0 px-5 py-4">
+            <p className="font-serif text-xl font-bold text-white">{name}</p>
             {title && (
-              <p className="mt-0.5 line-clamp-2 text-xs text-[var(--muted)]">{title}</p>
+              <p className="mt-1 line-clamp-2 text-xs leading-relaxed text-white/70">{title}</p>
             )}
-            <p className="mt-1 text-xs text-[var(--muted)]">Click to read bio</p>
+            <p className="mt-2 text-xs font-medium text-[var(--accent)]">
+              Tap to read bio
+            </p>
           </div>
         </div>
 
-        {/* Back - Bio */}
+        {/* Back */}
         <div
-          className="absolute inset-0 overflow-hidden rounded-2xl bg-white p-5 shadow-md"
+          className="absolute inset-0 overflow-hidden rounded-2xl border border-[var(--border)] bg-white p-6 shadow-md"
           style={{
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
@@ -63,20 +66,22 @@ export default function TeamFlipCard({ name, image, bio, title }: TeamFlipCardPr
           }}
         >
           <div className="flex h-full flex-col overflow-y-auto">
-            <p className="font-serif text-lg font-semibold text-[var(--foreground)]">{name}</p>
+            <p className="font-serif text-xl font-bold text-[var(--foreground)]">{name}</p>
             {title && (
-              <p className="mb-3 mt-1 text-xs text-[var(--muted)]">{title}</p>
+              <p className="mb-4 mt-1 text-xs font-medium text-[var(--accent)]">{title}</p>
             )}
-            <ul className="flex-1 space-y-1.5 text-sm text-[var(--muted)]">
+            <ul className="flex-1 space-y-2.5 text-sm text-[var(--muted)]">
               {bio.map((point, i) => (
-                <li key={i} className="flex gap-2">
-                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-[var(--muted)]" />
-                  <span>{point}</span>
+                <li key={i} className="flex gap-3">
+                  <span className="mt-1.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[var(--accent-light)]">
+                    <span className="h-1 w-1 rounded-full bg-[var(--accent)]" />
+                  </span>
+                  <span className="leading-relaxed">{point}</span>
                 </li>
               ))}
             </ul>
-            <p className="mt-2 flex items-center gap-1 text-xs text-[var(--muted)]">
-              <RotateCcw size={12} /> Click to flip back
+            <p className="mt-4 flex items-center gap-1.5 text-xs font-medium text-[var(--accent)]">
+              <RotateCcw size={12} /> Tap to flip back
             </p>
           </div>
         </div>
