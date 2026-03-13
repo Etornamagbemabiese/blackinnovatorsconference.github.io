@@ -29,33 +29,20 @@ export default function TeamPage() {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {TEAM_MEMBERS.map((member, index) => (
               <FadeInSection key={member.name} delay={index * 0.08}>
-                <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--border)] bg-white shadow-sm">
-                  <div className="relative aspect-[3/4] w-full">
+                <div className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm">
+                  <div className="relative aspect-[3/4] w-full overflow-hidden">
                     <Image
                       src={member.image}
                       alt={member.name}
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-500 hover:scale-105"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
-                  <div className="flex flex-1 flex-col gap-2 px-4 py-4">
+                  <div className="border-t border-[var(--border)] bg-[#f5f5f5] px-4 py-3">
                     <h2 className="font-serif text-lg font-semibold text-[var(--foreground)]">
                       {member.name}
                     </h2>
-                    {member.title && (
-                      <p className="text-sm font-medium text-[var(--muted)]">
-                        {member.title}
-                      </p>
-                    )}
-                    <ul className="mt-2 space-y-1 text-sm text-[var(--muted)]">
-                      {member.bio.map((point) => (
-                        <li key={point} className="flex gap-2">
-                          <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" />
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                 </div>
               </FadeInSection>
