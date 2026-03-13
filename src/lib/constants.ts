@@ -1,4 +1,2 @@
-// Base path for GitHub Pages deployment
-export const basePath = process.env.NODE_ENV === "production"
-  ? "/blackinnovatorsconference.github.io"
-  : "";
+// Base path for assets (empty because the site is served from the domain root)
+export const basePath = "";

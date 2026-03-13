@@ -1,16 +1,56 @@
-// 2026 Featured Speakers
-export const FEATURED_SPEAKERS = [
-  { name: "Featured Speaker 1", title: "Keynote Speaker" },
-  { name: "Featured Speaker 2", title: "Panelist" },
-  { name: "Featured Speaker 3", title: "Workshop Lead" },
-];
+export const KEYNOTE_SPEAKER = {
+  name: "Mr. High",
+  title: "2026 Keynote Speaker",
+  bio: "Keynote speaker sharing insights on leadership, resilience, and building pathways for the next generation of Black innovators.",
+};
 
-// Past Guests
-export const PAST_GUESTS = [
-  { name: "Past Guest 1" },
-  { name: "Past Guest 2" },
-  { name: "Past Guest 3" },
-  { name: "Past Guest 4" },
-  { name: "Past Guest 5" },
-  { name: "Past Guest 6" },
+export const PARTNER_TRACKS = [
+  {
+    id: "consulting",
+    label: "Consulting & Strategy",
+    speakers: [
+      {
+        name: "Consulting Speaker 1",
+        title: "Strategy Consultant",
+        bio: "Works with Fortune 500 clients on growth, market entry, and transformation.",
+      },
+      {
+        name: "Consulting Speaker 2",
+        title: "Management Consultant",
+        bio: "Helps organizations navigate change and build strong, inclusive teams.",
+      },
+    ],
+  },
+  {
+    id: "finance",
+    label: "Finance & Investing",
+    speakers: [
+      {
+        name: "Finance Speaker 1",
+        title: "Investment Professional",
+        bio: "Supports founders and companies through capital, mentorship, and strategic guidance.",
+      },
+      {
+        name: "Finance Speaker 2",
+        title: "Corporate Finance Leader",
+        bio: "Builds and leads teams focused on financial planning, analysis, and long-term value creation.",
+      },
+    ],
+  },
+  {
+    id: "tech",
+    label: "Tech & Product",
+    speakers: [
+      {
+        name: "Tech Speaker 1",
+        title: "Software Engineer",
+        bio: "Builds products at the intersection of technology, design, and user experience.",
+      },
+      {
+        name: "Tech Speaker 2",
+        title: "Product Manager",
+        bio: "Translates ideas into roadmap, features, and experiences that serve diverse users.",
+      },
+    ],
+  },
 ];

@@ -13,9 +13,9 @@ const experienceItems = [
     description:
       "Connect with Black professionals across industries. Build meaningful relationships that extend beyond the conference and last a lifetime.",
     highlights: [
-      "One-on-one speed networking",
-      "Industry-specific breakout sessions",
-      "Informal reception & mixer",
+      "Curated small-group networking with professionals and peers",
+      "Opportunities to meet partner organizations and recruiters",
+      "Dedicated time to reconnect with the Black UNC community",
     ],
   },
   {
@@ -24,9 +24,9 @@ const experienceItems = [
     description:
       "Hear from industry leaders and innovators. Engage in real discussions on career growth, entrepreneurship, and the Black experience in corporate America.",
     highlights: [
-      "Keynote presentations",
-      "Interactive panel Q&A",
-      "Fireside chats with leaders",
+      "Keynote conversation with our featured speaker",
+      "Industry panels spanning consulting, finance, tech, and more",
+      "Interactive Q&A designed for honest and actionable insight",
     ],
   },
   {
@@ -35,9 +35,9 @@ const experienceItems = [
     description:
       "Gain insights and tools to advance your career. Workshops, mentorship opportunities, and resources designed specifically for your success.",
     highlights: [
-      "Resume & portfolio reviews",
-      "Mentorship matching",
-      "Skill-building workshops",
+      "Resume and LinkedIn feedback from experienced professionals",
+      "Guided conversations about recruiting, internships, and full-time roles",
+      "Practical sessions on storytelling, personal brand, and navigating early career",
     ],
   },
 ];

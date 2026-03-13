@@ -1,27 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { Heart, ArrowRight, Mail, Handshake, Gift } from "lucide-react";
+import { Heart, ArrowRight, Mail, Handshake } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
 
-const sponsors = [
-  { name: "Sponsor 1" },
-  { name: "Sponsor 2" },
-  { name: "Sponsor 3" },
-];
+const sponsors = [{ name: "The Warrior Connection Experience" }];
 
 const supportWays = [
   {
-    icon: Gift,
-    title: "Donate",
-    description:
-      "Your financial contribution directly supports programming, venue costs, and student scholarships.",
-  },
-  {
     icon: Handshake,
-    title: "Sponsor",
+    title: "Be a Speaker",
     description:
-      "Partner with us as a corporate sponsor and connect your brand with the next generation of Black innovators.",
+      "Share your story on stage. Complete our interest form to tell us about your background and areas of expertise.",
   },
   {
     icon: Mail,
@@ -135,10 +125,10 @@ export default function SupportPage() {
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
                 <Link
-                  href="#"
+                  href="/speaker-interest"
                   className="inline-flex items-center justify-center gap-2 rounded-md bg-[var(--accent)] px-8 py-3.5 font-semibold text-[var(--dark)] transition-colors hover:bg-[var(--accent-hover)]"
                 >
-                  Support Us
+                  Click here if you want to be a speaker
                   <ArrowRight size={16} />
                 </Link>
                 <Link

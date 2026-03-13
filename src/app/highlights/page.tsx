@@ -1,19 +1,18 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { GALLERY_IMAGES } from "@/lib/gallery-images";
 import { basePath } from "@/lib/constants";
 import { Camera, ChevronDown, X } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
 
-const IMAGES_PER_PAGE = 24;
+const MAX_IMAGES = 20;
 
 export default function HighlightsPage() {
-  const [visibleCount, setVisibleCount] = useState(IMAGES_PER_PAGE);
+  const images = GALLERY_IMAGES.slice(0, MAX_IMAGES);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const hasMore = visibleCount < GALLERY_IMAGES.length;
 
   return (
     <div>
@@ -34,7 +33,7 @@ export default function HighlightsPage() {
           <FadeInSection delay={0.1}>
             <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/50">
               <Camera size={14} />
-              {GALLERY_IMAGES.length} photos
+              Top {images.length} photos
             </div>
           </FadeInSection>
         </div>
@@ -43,7 +42,7 @@ export default function HighlightsPage() {
       <section className="bg-[var(--background)] py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="columns-2 gap-4 sm:columns-3 lg:columns-4">
-            {GALLERY_IMAGES.slice(0, visibleCount).map((img, index) => (
+            {images.map((img, index) => (
               <motion.div
                 key={img}
                 initial={{ opacity: 0, y: 20 }}
@@ -70,27 +69,11 @@ export default function HighlightsPage() {
             ))}
           </div>
 
-          {hasMore && (
-            <FadeInSection>
-              <div className="mt-12 text-center">
-                <button
-                  onClick={() =>
-                    setVisibleCount((prev) =>
-                      Math.min(prev + IMAGES_PER_PAGE, GALLERY_IMAGES.length)
-                    )
-                  }
-                  className="inline-flex items-center gap-2 rounded-md border border-[var(--border)] bg-white px-6 py-3 text-sm font-semibold text-[var(--foreground)] transition-all hover:border-[var(--accent)]/30 hover:shadow-lg"
-                >
-                  Load More
-                  <ChevronDown size={16} />
-                </button>
-                <p className="mt-3 text-xs text-[var(--muted)]">
-                  Showing {Math.min(visibleCount, GALLERY_IMAGES.length)} of{" "}
-                  {GALLERY_IMAGES.length}
-                </p>
-              </div>
-            </FadeInSection>
-          )}
+          <FadeInSection>
+            <p className="mt-10 text-center text-xs text-[var(--muted)]">
+              Showing {images.length} curated photos from our gallery.
+            </p>
+          </FadeInSection>
         </div>
       </section>
 

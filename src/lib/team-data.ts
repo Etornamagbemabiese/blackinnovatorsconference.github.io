@@ -1,5 +1,3 @@
-import { basePath } from "./constants";
-
 export interface TeamMember {
   name: string;
   image: string;
@@ -10,7 +8,7 @@ export interface TeamMember {
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     name: "Austin Dumas",
-    image: `${basePath}/headshots/austin-dumas.jpeg`,
+    image: "/headshots/austin-dumas.jpeg",
     title: "Intern @ EY | President, UNC MBSA | Kenan-Flagler",
     bio: [
       "Junior studying business, economics & French",
@@ -21,7 +19,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Raven Heyward",
-    image: `${basePath}/headshots/raven-heyward.jpeg`,
+    image: "/headshots/raven-heyward.jpeg",
     title: "Incoming Analyst @ Visa | Luther Hodges Scholar",
     bio: [
       "Senior @ UNC Kenan-Flagler",
@@ -32,7 +30,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Alaina Parker",
-    image: `${basePath}/headshots/alaina-parker.jpeg`,
+    image: "/headshots/alaina-parker.jpeg",
     title: "Biomedical Engineering @ UNC | Chancellor's Science Scholar",
     bio: [
       "4th year BME, Pharmaco-Engineering concentration",
@@ -43,7 +41,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Etornam Agbemabiese",
-    image: `${basePath}/headshots/etornam-agbemabiese.jpeg`,
+    image: "/headshots/etornam-agbemabiese.jpeg",
     title: "Business & Computer Science @ UNC | MLT Scholar",
     bio: [
       "Incoming Redwoods Summer Analyst @ DaVita",
@@ -54,13 +52,43 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Nicole Pyles",
-    image: `${basePath}/headshots/nicole-pyles.jpeg`,
+    image: "/headshots/nicole-pyles.jpeg",
     title: "Co-President, MBSA | MLT Career Prep Fellow",
     bio: [
       "1st degree black belt in Taekwondo",
       "Founder of Cole's Corner baking business",
       "Marketing & brand strategy focus",
       "Her Campus Certified Content Creator",
+    ],
+  },
+  {
+    name: "Grace",
+    image: "/headshots/grace.png",
+    title: "Programming & Experience Lead",
+    bio: [
+      "Helps design the flow of the Warrior Connection Experience",
+      "Focuses on attendee journey and on-site experience",
+      "Passionate about creating spaces where Black students feel seen",
+    ],
+  },
+  {
+    name: "Vanessa",
+    image: "/headshots/vanessa.png",
+    title: "Partnerships & Outreach",
+    bio: [
+      "Builds relationships with campus and corporate partners",
+      "Helps align sponsors with student opportunities",
+      "Committed to expanding access to career pathways",
+    ],
+  },
+  {
+    name: "Candice",
+    image: "/headshots/candice.png",
+    title: "Operations & Logistics",
+    bio: [
+      "Oversees event logistics and volunteer coordination",
+      "Keeps programming running smoothly behind the scenes",
+      "Dedicated to excellence in every detail of the conference",
     ],
   },
 ];

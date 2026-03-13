@@ -25,7 +25,7 @@ const faqItems = [
   {
     question: "What should I bring?",
     answer:
-      "Bring your business cards, an open mind, and readiness to network. We recommend dressing business casual for the event.",
+      "Bring your business cards, an open mind, and readiness to network. Dress code is business professional for the conference.",
   },
   {
     question: "How can I become a speaker or sponsor?",
