@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Users, Mic2, TrendingUp, Lightbulb, Handshake, Award, ArrowRight } from "lucide-react";
+import { Users, Mic2, Lightbulb, Handshake, Award, ArrowRight } from "lucide-react";
 import FadeInSection from "@/components/FadeInSection";
 import { basePath } from "@/lib/constants";
 
@@ -27,17 +27,6 @@ const experienceItems = [
       "Keynote conversation with our featured speaker",
       "Industry panels spanning consulting, finance, tech, and more",
       "Interactive Q&A designed for honest and actionable insight",
-    ],
-  },
-  {
-    icon: TrendingUp,
-    title: "Career Development",
-    description:
-      "Gain insights and tools to advance your career. Workshops, mentorship opportunities, and resources designed specifically for your success.",
-    highlights: [
-      "Resume and LinkedIn feedback from experienced professionals",
-      "Guided conversations about recruiting, internships, and full-time roles",
-      "Practical sessions on storytelling, personal brand, and navigating early career",
     ],
   },
 ];
