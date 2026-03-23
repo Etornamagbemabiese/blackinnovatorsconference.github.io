@@ -9,7 +9,7 @@ import { basePath } from "@/lib/constants";
 const MICROSOFT_FORM_URL =
   "https://forms.office.com/Pages/ResponsePage.aspx?id=oQggro32SkGpqzNryKhX0immAIIf7u1IrFCb_PGCUYJUNElQVTJJUlZRWEJRSFhGWkVKOE83WlRZOC4u";
 
-const REGISTRATION_OPEN = false;
+const REGISTRATION_OPEN = true;
 
 export default function RegistrationPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -47,7 +47,7 @@ export default function RegistrationPage() {
 
       {/* Poster */}
       <section className="bg-[var(--background)] py-12">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <FadeInSection>
             <div className="overflow-hidden rounded-2xl shadow-xl">
               <Image
