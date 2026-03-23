@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import FadeInSection from "@/components/FadeInSection";
-import { basePath } from "@/lib/constants";
 
 const scheduleItems = [
   { time: "10:00 am – 10:30 am", event: "Registration and Refreshments" },
@@ -70,22 +68,7 @@ export default function SchedulePage() {
         </div>
       </section>
 
-      {/* Schedule image */}
-      <section className="bg-[var(--background)] pb-20">
-        <div className="mx-auto max-w-lg px-4 sm:px-6 lg:px-8">
-          <FadeInSection>
-            <div className="overflow-hidden rounded-2xl shadow-xl">
-              <Image
-                src={`${basePath}/Schedule.png`}
-                alt="BIC 2026 Schedule"
-                width={800}
-                height={1100}
-                className="w-full"
-              />
-            </div>
-          </FadeInSection>
-        </div>
-      </section>
+
     </div>
   );
 }
