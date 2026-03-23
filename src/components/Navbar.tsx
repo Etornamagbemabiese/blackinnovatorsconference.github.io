@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/team", label: "Team" },
   { href: "/highlights", label: "Highlights" },
   { href: "/experience", label: "Experience" },
+  { href: "/schedule", label: "Schedule" },
   { href: "/support", label: "Support" },
   { href: "/faq", label: "FAQ" },
 ];
