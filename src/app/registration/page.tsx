@@ -3,17 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import FadeInSection from "@/components/FadeInSection";
-import { ExternalLink, Calendar, MapPin, Clock, CheckCircle2 } from "lucide-react";
+import { ExternalLink, CheckCircle2 } from "lucide-react";
 import { basePath } from "@/lib/constants";
 
 const MICROSOFT_FORM_URL =
   "https://forms.office.com/Pages/ResponsePage.aspx?id=oQggro32SkGpqzNryKhX0immAIIf7u1IrFCb_PGCUYJUNElQVTJJUlZRWEJRSFhGWkVKOE83WlRZOC4u";
-
-const details = [
-  { icon: Calendar, label: "Date", value: "Coming soon" },
-  { icon: MapPin, label: "Location", value: "UNC Kenan-Flagler Business School" },
-  { icon: Clock, label: "Cost", value: "Free for students & professionals" },
-];
 
 const REGISTRATION_OPEN = false;
 
@@ -48,28 +42,6 @@ export default function RegistrationPage() {
               </p>
             )}
           </FadeInSection>
-
-          <FadeInSection delay={0.1}>
-            <div className="mt-10 grid grid-cols-3 gap-4">
-              {details.map((detail) => (
-                <div
-                  key={detail.label}
-                  className="rounded-xl border border-white/10 bg-white/5 px-4 py-4 backdrop-blur-sm"
-                >
-                  <detail.icon
-                    size={18}
-                    className="text-[var(--accent)]"
-                  />
-                  <p className="mt-2 text-xs font-medium text-white/40">
-                    {detail.label}
-                  </p>
-                  <p className="mt-0.5 text-sm font-semibold text-white">
-                    {detail.value}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </FadeInSection>
         </div>
       </section>
 
@@ -79,10 +51,10 @@ export default function RegistrationPage() {
           <FadeInSection>
             <div className="overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src={`${basePath}/Poster.png`}
-                alt="Black Innovators Conference 2026 Poster"
-                width={1200}
-                height={675}
+                src={`${basePath}/Schedule.png`}
+                alt="BIC 2026 Schedule"
+                width={800}
+                height={1100}
                 className="w-full"
                 priority
               />
