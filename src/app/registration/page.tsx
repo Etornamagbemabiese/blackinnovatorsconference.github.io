@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import FadeInSection from "@/components/FadeInSection";
 import { ExternalLink, Calendar, MapPin, Clock, CheckCircle2 } from "lucide-react";
+import { basePath } from "@/lib/constants";
 
 const MICROSOFT_FORM_URL =
   "https://forms.office.com/Pages/ResponsePage.aspx?id=oQggro32SkGpqzNryKhX0immAIIf7u1IrFCb_PGCUYJUNElQVTJJUlZRWEJRSFhGWkVKOE83WlRZOC4u";
@@ -66,6 +68,24 @@ export default function RegistrationPage() {
                   </p>
                 </div>
               ))}
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Poster */}
+      <section className="bg-[var(--background)] py-12">
+        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <FadeInSection>
+            <div className="overflow-hidden rounded-2xl shadow-xl">
+              <Image
+                src={`${basePath}/Poster.png`}
+                alt="Black Innovators Conference 2026 Poster"
+                width={1200}
+                height={675}
+                className="w-full"
+                priority
+              />
             </div>
           </FadeInSection>
         </div>
