@@ -44,11 +44,11 @@ export default function Home() {
           src={`${basePath}/hero-group.jpg`}
           alt="Black Innovators Conference community"
           fill
-          className="object-cover object-center opacity-40"
+          className="object-cover object-center opacity-65"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[var(--dark)] via-[var(--dark)]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--dark)] via-[var(--dark)]/40 to-transparent" />
 
         <div className="relative mx-auto flex min-h-[90vh] max-w-7xl flex-col justify-center px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl py-32">
