@@ -51,10 +51,10 @@ export default function RegistrationPage() {
           <FadeInSection>
             <div className="overflow-hidden rounded-2xl shadow-xl">
               <Image
-                src={`${basePath}/Poster.png`}
-                alt="Black Innovators Conference 2026 Poster"
-                width={1200}
-                height={675}
+                src={`${basePath}/Schedule.png`}
+                alt="BIC 2026 Schedule"
+                width={800}
+                height={1100}
                 className="w-full"
                 priority
               />
