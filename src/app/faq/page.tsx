@@ -28,6 +28,11 @@ const faqItems = [
       "Bring your business cards, an open mind, and readiness to network. Dress code is business professional for the conference.",
   },
   {
+    question: "Is there parking available?",
+    answer:
+      "Yes! Parking is free at the Skipper Bowles parking lot at UNC Chapel Hill.",
+  },
+  {
     question: "How can I become a speaker or sponsor?",
     answer:
       "Please reach out to us through our Support page or contact information. We welcome speakers and sponsors who align with our mission.",
