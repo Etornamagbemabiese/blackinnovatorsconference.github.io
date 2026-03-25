@@ -62,7 +62,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
   },
   {
-    name: "Grace",
+    name: "Candice",
     image: "/headshots/grace.png",
     title: "Programming & Experience Lead",
     bio: [
@@ -72,7 +72,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
   },
   {
-    name: "Vanessa",
+    name: "Grace",
     image: "/headshots/vanessa.png",
     title: "Partnerships & Outreach",
     bio: [
@@ -82,7 +82,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     ],
   },
   {
-    name: "Candice",
+    name: "Vanessa",
     image: "/headshots/candice.png",
     title: "Operations & Logistics",
     bio: [
